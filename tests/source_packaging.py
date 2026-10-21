@@ -18,8 +18,8 @@ with tempfile.TemporaryDirectory() as temp:
     with zipfile.ZipFile(first) as bundle:
         assert bundle.testzip() is None
         names = {name.removeprefix('afk-alerts/') for name in bundle.namelist()}
-        assert {'LICENSE', 'CONTRIBUTING.md', 'PUBLISHING.md', 'tests/ui.lua',
-                'tools/check_release.py', 'tools/build_source.py', '.github/workflows/check.yml', 'media/listing.svg', 'media/listing.png'} <= names
+        assert {'LICENSE', 'AI_DISCLOSURE.md', 'GITHUB_RELEASE.md', 'MODIO_SETUP.md', 'CONTRIBUTING.md', 'PUBLISHING.md', 'tests/ui.lua',
+                'tools/check_release.py', 'tools/build_source.py', 'tools/prepare_release.py', '.github/workflows/release.yml', '.github/workflows/check.yml', 'media/listing.svg', 'media/listing.png'} <= names
         assert bundle.read('afk-alerts/src/custom_sounds.lua').endswith(b'return {}\n')
         assert not any(name.startswith(('tools/bin/', 'sounds/')) or name.endswith(('.mp3', '.zip', '.so', '.pyc')) or '.so.' in name for name in names)
         assert not any('custom_' in name and name != 'src/custom_sounds.lua' for name in names)

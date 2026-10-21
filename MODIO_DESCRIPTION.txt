@@ -23,6 +23,9 @@ Many effect bindings need live HUD checks. A timer arms after its active effect 
 Audio
 Sine, Saw, Square, Alarm, Ring, Beep, Chime, Siren, Double Alarm and Urgent Pulse. Custom audio needs Ogg Vorbis files and an editable local installation. Personal audio and converter binaries are excluded from public downloads.
 
+How this was made / AI disclosure
+I do not know how to code. AI (OpenAI Codex) wrote the implementation, with me providing the ideas, requirements, in-game testing and feedback. AI also helped write the tests and documentation. This is an early public testing project; independent code review and contributions from experienced developers are welcome. An independent human code audit and Jagex approval are not claimed. Full context: https://github.com/daanpaalvastjunkmail-png/afk-alerts/blob/main/AI_DISCLOSURE.md
+
 Open source
 MIT licensed. Source, bug reports and contributions: https://github.com/daanpaalvastjunkmail-png/afk-alerts
 

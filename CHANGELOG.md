@@ -5,6 +5,7 @@
 Public testing release, intended for feedback before 1.0.
 
 - Settings now has General, Audio, Sounds and Developer tabs. Moved connection status, API snapshots, limit diagnostics and effect recording/export to Developer.
+- Added a prominent AI disclosure and a manual GitHub Actions workflow that tests, builds and publishes the public pre-release.
 - Packaged the project for open-source distribution under MIT, with contribution instructions, clean source/plugin builders and a GitHub-ready repository.
 - Updated installation help, permissions/privacy explanations and the mod.io listing draft for the current feature set and known limits.
 - Includes the 0.6 improvements: live search, chat triggers/recent messages, compact editors, global help, four Gregorovic presets, persistent red condition bars, ten built-in sounds and independent optional Chat/HTTP consent handling.

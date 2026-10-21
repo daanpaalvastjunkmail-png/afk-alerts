@@ -24,3 +24,8 @@ Do not commit personal imported audio, presets containing private phrases, effec
 Open an issue with the plugin version, operating system/client, steps, expected result, actual result and relevant console error. For a timer include its exact alert name and HUD comparison. For UI bugs include window dimensions and a screenshot with personal information removed.
 
 If useful for a specific timer problem, use Settings > Developer to start a recording, activate/refresh the effect, then Stop and Show recording. Review any exported file before sharing. Recording is optional and does not run by default. Do not post received chat or account credentials.
+
+
+## AI origin and code review
+
+The creator does not code; AI (OpenAI Codex) wrote the implementation under the creator’s direction. See AI_DISCLOSURE.md. Experienced developers can help by reviewing small, concrete areas, explaining the behaviour and risks to the creator, and proposing focused changes. Please distinguish automated/mock checks from live testing and independent human review. Jagex requires the submitting creator to personally review and understand submitted code; this project does not claim that has already happened.

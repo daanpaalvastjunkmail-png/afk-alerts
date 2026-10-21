@@ -22,6 +22,10 @@ The owner selected 0.7 as an early public testing release, rather than claiming 
 
 Exceptional raised prayer/adrenaline/Summoning caps remain deferred because the owner cannot currently test them. Platform support beyond the owner's tested environment needs independent feedback. No universal buff coverage or public native MP3 import is promised.
 
+## AI disclosure and review
+
+The creator does not code. OpenAI Codex wrote the implementation under the creator’s direction, with the creator choosing features and testing in-game. AI also helped with tests/documentation. AI_DISCLOSURE.md and public listing/release notes state this explicitly. Independent human code review has not been established. Before mod.io submission the creator must address Jagex’s requirement to personally review and understand the code; ask an experienced developer to walk through it with the creator.
+
 ## Publication
 
 Run `python3 -B tools/check_release.py --audio-assets --audio-tools` with Lua 5.4 and FFmpeg/ffprobe, then `python3 -B tools/build_source.py`. Publish the clean repository to daanpaalvastjunkmail-png/afk-alerts and attach the versioned plugin/source ZIPs to a GitHub pre-release. Keep the personal development archive private.

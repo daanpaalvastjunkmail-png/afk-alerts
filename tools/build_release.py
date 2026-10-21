@@ -12,7 +12,7 @@ SOUNDS = ('health', 'adrenaline', 'prayer', 'summoning', 'skill', 'familiar',
           'basic_saw', 'basic_square', 'basic_alarm',
           'basic_ring', 'basic_beep', 'basic_chime',
           'basic_siren', 'basic_double_alarm', 'basic_urgent_pulse')
-DOCS = ('LICENSE', 'README.md', 'CHANGELOG.md', 'CONTRIBUTING.md', 'PUBLISHING.md', 'PRESETS.md', 'SOUND_GUIDE.md', 'EFFECT_COVERAGE.md',
+DOCS = ('AI_DISCLOSURE.md', 'LICENSE', 'README.md', 'CHANGELOG.md', 'CONTRIBUTING.md', 'PUBLISHING.md', 'PRESETS.md', 'SOUND_GUIDE.md', 'EFFECT_COVERAGE.md',
         'BUFF_DURATIONS.md', 'GREGOROVIC.md', 'PRIVACY.md', 'THIRD_PARTY_NOTICES.md',
         'RELEASE_CHECKLIST.md', 'MODIO_RELEASE_NOTES.txt')
 

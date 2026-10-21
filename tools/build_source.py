@@ -12,11 +12,11 @@ import zipfile
 
 ROOT = Path(__file__).resolve().parent.parent
 SOURCE_DOCS = ('.gitignore', 'CHANGELOG.md', 'CONTRIBUTING.md', 'PUBLISHING.md',
-               'MODIO_DESCRIPTION.txt', 'MODIO_SUMMARY.txt', 'media/listing.svg', 'media/listing.png')
+               'GITHUB_RELEASE.md', 'MODIO_SETUP.md', 'MODIO_DESCRIPTION.txt', 'MODIO_SUMMARY.txt', 'media/listing.svg', 'media/listing.png')
 SOURCE_TOOLS = ('analyze_recording.py', 'build_effect_catalog.py', 'build_release.py',
                 'build_source.py', 'check_release.py', 'generate_builtin_sounds.py',
-                'import_mp3.py')
-GITHUB_FILES = ('.github/workflows/check.yml', '.github/ISSUE_TEMPLATE/bug_report.md')
+                'import_mp3.py', 'prepare_release.py')
+GITHUB_FILES = ('.github/workflows/check.yml', '.github/workflows/release.yml', '.github/ISSUE_TEMPLATE/bug_report.md')
 
 
 def source_files(root=ROOT):

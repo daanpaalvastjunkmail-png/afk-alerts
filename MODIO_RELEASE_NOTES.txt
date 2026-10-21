@@ -2,6 +2,8 @@ Version: 0.7.0
 
 Public testing release.
 
+AI disclosure: I do not know how to code. AI (OpenAI Codex) wrote the implementation, with me directing the ideas, requirements, in-game testing and feedback. AI also helped with tests and documentation. Independent code review and contributions from experienced developers are welcome; no independent human audit is claimed.
+
 Settings now has General, Audio, Sounds and Developer tabs. Connection status, API snapshots, resource diagnostics and opt-in effect recording/export live under Developer. Everyday audio and permission controls remain easy to find.
 
 MIT-licensed source release with build tools, tests and contribution instructions. Public downloads exclude personal sounds, converter binaries and recordings.

@@ -27,7 +27,7 @@ def main():
         run(['lua', str(path.relative_to(ROOT))])
     for path in sorted(ROOT.rglob('*.lua')):
         run(['luac', '-p', str(path)])
-    for name in ('analyze_recording.py', 'release_packaging.py', 'source_packaging.py'):
+    for name in ('analyze_recording.py', 'release_packaging.py', 'source_packaging.py', 'prepare_release.py'):
         run([sys.executable, '-B', 'tests/' + name])
     if args.audio_assets:
         run([sys.executable, '-B', 'tests/basic_audio.py'])

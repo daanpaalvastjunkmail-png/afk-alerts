@@ -22,6 +22,12 @@ Create release `v0.7.0`, titled **AFK ALERTS 0.7.0 - Public Test**, marked as a 
 
 If publishing manually, GitHub's [new-repository form](https://github.com/new?owner=daanpaalvastjunkmail-png&name=afk-alerts&visibility=public) can create the destination. Push the prepared local `main` branch using your own GitHub authentication. Do not post access tokens into issues or chat. See [GitHub's repository guide](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-new-repository).
 
+## Publish through GitHub Actions
+
+After committing the complete source and the latest AI-disclosure update to main, open Actions > Publish public test release > Run workflow, keeping main selected. The workflow runs the checks, builds both public archives and checksums, then creates the manifest-version tag and GitHub pre-release using GITHUB_RELEASE.md. It only runs when manually started. It stops if an existing tag refers to a different commit, and does not replace an existing release. The built archives come from the tested GitHub checkout. If it fails, inspect the red step in that run before retrying.
+
+See MODIO_SETUP.md for the prepared listing fields and outstanding owner review.
+
 ## mod.io submission
 
 Follow the current [Jagex submission process](https://developer.runescape.com/rs/submission/process.html) and [guidelines](https://developer.runescape.com/rs/submission/guidelines.html):

@@ -4,6 +4,10 @@
 
 Requires **[PrettyUI](https://mod.io/g/runescape/m/prettyui)** (mod.io ID **6398181**). AFK ALERTS is a community project, with no Jagex endorsement. The 0.7 release is for public testing; wider effect coverage and platform compatibility still need in-game feedback.
 
+## AI disclosure
+
+I do not know how to code. AI (OpenAI Codex) wrote AFK ALERTS’ implementation, following my ideas, requirements, in-game testing and feedback. AI also helped with the tests and documentation. This is an early public testing project; independent code review and contributions from experienced developers are welcome. See [AI_DISCLOSURE.md](AI_DISCLOSURE.md) for the full context and remaining review work.
+
 ## Download and try it
 
 Download the ready-to-run plugin ZIP from [Releases](https://github.com/daanpaalvastjunkmail-png/afk-alerts/releases). This repository's source archive includes tests and build tools; the plugin ZIP is the smaller package intended for installation. Releases will appear there after publication.
@@ -79,10 +83,10 @@ python3 -B tools/check_release.py
 
 This runs the Lua tests, syntax checks, recording analyzer, public/source packaging checks and builds `../afk_alerts_plugin.zip`. The installable ZIP has `main.lua` and `plugin.json` at its root. Add `--audio-assets` to decode/check the tones, or `--audio-tools` for the optional MP3 helper; both need system FFmpeg/ffprobe. Public source includes the helper script, with no converter binaries or personal clips.
 
-`python3 -B tools/build_source.py` builds the clean source archive. [CONTRIBUTING.md](CONTRIBUTING.md) explains the project layout and how to report a problem. [PUBLISHING.md](PUBLISHING.md) describes GitHub and mod.io release preparation.
+`python3 -B tools/build_source.py` builds the clean source archive. After the checks, `python3 -B tools/prepare_release.py` prepares both versioned archives and checksums in `dist/`. The manual Actions workflow **Publish public test release** performs the checks and publishes those artifacts as a GitHub pre-release. [CONTRIBUTING.md](CONTRIBUTING.md) explains the project layout and how to report a problem. [PUBLISHING.md](PUBLISHING.md) describes GitHub and mod.io release preparation.
 
 ## License and support
 
 MIT: see [LICENSE](LICENSE). Original generated built-in tones are included under the same license. External dependencies, client artwork and RuneScape/Jagex names remain their owners' property; see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
-Source/project: [daanpaalvastjunkmail-png/afk-alerts](https://github.com/daanpaalvastjunkmail-png/afk-alerts) (publication pending). Support: **daan9_9@hotmail.com**. For bugs include version, platform, reproduction steps and console errors; remove personal chat from screenshots and recordings before sharing.
+Source/project: [daanpaalvastjunkmail-png/afk-alerts](https://github.com/daanpaalvastjunkmail-png/afk-alerts). Support: **daan9_9@hotmail.com**. For bugs include version, platform, reproduction steps and console errors; remove personal chat from screenshots and recordings before sharing.
