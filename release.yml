@@ -1,0 +1,52 @@
+name: Publish public test release
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: public-test-release
+  cancel-in-progress: false
+jobs:
+  publish:
+    name: Test, package and publish
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Install test dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y lua5.4 ffmpeg
+      - name: Run release checks
+        run: python3 -B tools/check_release.py --audio-assets --audio-tools
+      - name: Prepare the public artifacts
+        id: files
+        run: python3 -B tools/prepare_release.py --github-output
+      - name: Publish the GitHub pre-release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_VERSION: ${{ steps.files.outputs.version }}
+          RELEASE_TAG: ${{ steps.files.outputs.tag }}
+        run: |
+          if git rev-parse -q --verify "refs/tags/$RELEASE_TAG" >/dev/null; then
+            tag_commit=$(git rev-parse "refs/tags/${RELEASE_TAG}^{commit}")
+            if [ "$tag_commit" != "$GITHUB_SHA" ]; then
+              echo "The existing tag refers to a different commit. Inspect the release/tag before proceeding."
+              exit 1
+            fi
+          fi
+          if gh release view "$RELEASE_TAG" >/dev/null 2>&1; then
+            echo "This release already exists. Existing published files will not be overwritten."
+            exit 1
+          fi
+          gh release create "$RELEASE_TAG" \
+            "dist/afk_alerts_${RELEASE_VERSION}.zip" \
+            "dist/afk_alerts_source_${RELEASE_VERSION}.zip" \
+            dist/SHA256SUMS.txt \
+            --target "$GITHUB_SHA" \
+            --title "AFK ALERTS ${RELEASE_VERSION} - Public Test" \
+            --notes-file GITHUB_RELEASE.md \
+            --prerelease
