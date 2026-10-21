@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.zip
+*.zip.tmp
+.env
+.env.*
+*.log
+RS3-buffs*.txt
+recordings/
+samples/
+resources/sounds/custom_*
+resources/alert_custom_*
+sounds/*.mp3
+tools/bin/
+tools/custom_sounds.json
+dist/
