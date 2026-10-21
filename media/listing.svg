@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720"><rect width="1280" height="720" fill="#151a20"/>
+<rect x="44" y="44" width="1192" height="632" rx="18" fill="#151a20" stroke="#343f48" stroke-width="2"/>
+<rect x="84" y="89" width="198" height="40" rx="9" fill="#202932"/>
+<text x="100" y="113.04" font-family="Nimbus Sans, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#d4b77a">0.7  PUBLIC TEST</text>
+<text x="83" y="283.28" font-family="Nimbus Sans, Helvetica, sans-serif" font-size="76" font-weight="700" fill="#f1eadc">AFK ALERTS</text>
+<text x="87" y="349.84" font-family="Nimbus Sans, Helvetica, sans-serif" font-size="28" font-weight="400" fill="#aab8c3">Your reminders. Your settings.</text>
+<text x="87" y="416.94" font-family="Nimbus Sans, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#f1eadc">Sounds, timers and visual alerts</text>
+<text x="87" y="454.94" font-family="Nimbus Sans, Helvetica, sans-serif" font-size="23" font-weight="400" fill="#f1eadc">for RuneScape.</text>
+<rect x="87" y="524" width="250" height="44" rx="9" fill="#202932"/>
+<text x="105" y="551.04" font-family="Nimbus Sans, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#54b5a7">OPEN SOURCE  /  MIT</text>
+<text x="87" y="630.26" font-family="Nimbus Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#aab8c3">NODES PRODUCTIONS</text>
+<rect x="779" y="190" width="391" height="334" rx="18" fill="#202932" stroke="#3a4952" stroke-width="2"/>
+<text x="807" y="233.26" font-family="Nimbus Sans, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#d4b77a">READY WHEN YOU NEED IT</text>
+<text x="809" y="294.38" font-family="Nimbus Sans, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#f1eadc">Health</text>
+<rect x="809" y="315" width="329" height="7" rx="3" fill="#3c4853"/>
+<rect x="809" y="315" width="292" height="7" rx="3" fill="#54b5a7"/>
+<text x="809" y="370.38" font-family="Nimbus Sans, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#f1eadc">Effect timer</text>
+<rect x="809" y="391" width="329" height="7" rx="3" fill="#3c4853"/>
+<rect x="809" y="391" width="209" height="7" rx="3" fill="#d4b77a"/>
+<text x="809" y="446.38" font-family="Nimbus Sans, Helvetica, sans-serif" font-size="21" font-weight="400" fill="#f1eadc">Chat trigger</text>
+<rect x="809" y="467" width="329" height="7" rx="3" fill="#3c4853"/>
+<rect x="809" y="467" width="248" height="7" rx="3" fill="#54b5a7"/>
+</svg>

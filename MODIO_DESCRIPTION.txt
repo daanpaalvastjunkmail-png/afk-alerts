@@ -1,0 +1,46 @@
+AFK ALERTS 0.7.0 - Public Test
+
+Configurable audio and visual reminders for RuneScape. Create your own alerts, load a preset, or change the thresholds to suit how you play. This 0.7 release is open for testing and feedback before 1.0.
+
+Features
+- Health, prayer, adrenaline and Summoning-point thresholds.
+- Searchable supported effect timers. Expanded bindings are experimental; universal buff/debuff coverage is not claimed.
+- Inventory-full and skilling-stopped reminders.
+- Owned ground-item drop alerts by count, GE guide value or High Alch value.
+- Incoming chat word/phrase alerts, with a clickable recent-message picker.
+- Ten built-in sounds, master/per-alert volume and mute.
+- Text popups, persistent red condition bars and optional screen flashes/monitor-row circles.
+- Save, rename, load, delete/Undo and import/export personal presets. Includes four general presets and four Gregorovic AFK variants.
+
+Requires PrettyUI (mod.io ID 6398181).
+
+Getting started
+Open AFK ALERTS from the plugin ribbon, click +, select/search for an alert, configure Trigger / Sound / Display, then ADD. Use Edit > SAVE for changes. Presets opens the preset controls at the top right. Settings has General, Audio, Sounds and Developer tabs; diagnostics and optional recording are under Developer.
+
+Known limits
+Many effect bindings need live HUD checks. A timer arms after its active effect has been observed. Player-poison detection is unavailable; weapon poison is an expiry reminder. Shared pocket timers cannot verify the correct item. Exceptional resource caps, wider platform compatibility and the new native permission flow need more feedback. Export personal presets before updating; local-to-Hub storage migration is unverified. This plugin does not automate gameplay.
+
+Audio
+Sine, Saw, Square, Alarm, Ring, Beep, Chime, Siren, Double Alarm and Urgent Pulse. Custom audio needs Ogg Vorbis files and an editable local installation. Personal audio and converter binaries are excluded from public downloads.
+
+Open source
+MIT licensed. Source, bug reports and contributions: https://github.com/daanpaalvastjunkmail-png/afk-alerts
+
+Email
+Contact: daan9_9@hotmail.com
+For bugs include the plugin version, platform, exact action and relevant console error. Remove personal information from screenshots before sharing.
+
+EULA
+Plugin submission and use are subject to the Jagex End User License Agreement, including its plugin terms: https://legal.jagex.com/docs/terms/eula
+AFK ALERTS is a community plugin, not a Jagex-endorsed product.
+
+Permissions
+Optional Chat access reads incoming messages for configured phrase triggers and the recent-message picker. It is not used to send or modify messages.
+Optional HTTP access retrieves official GE guide prices from https://secure.runescape.com using item IDs. These HTTPS requests do not include chat text, account names or saved presets. Both permissions may be enabled together, but chat text is never combined with HTTP requests. Other alerts work without these permissions. Manage them in Settings > General or Plugin Hub's padlock.
+
+Data Protection
+Game readings and configured thresholds are processed locally. Settings, personal presets and explicitly saved effect recordings use the client's local PersistentDB. The developer has no remote access to this database and collects no telemetry.
+Received chat history is temporary memory only (last 60 seconds, up to 80 messages), cleared on logout/reload or revoked access. A phrase you choose as an alert trigger becomes saved configuration and is included when you export that preset. Exported presets and manually copied diagnostics leave the plugin only if you choose to share them.
+GE requests transmit item IDs in HTTPS URLs to secure.runescape.com. The service receives ordinary connection metadata such as the source IP address. HTTPS protects transport; server-side access, location and retention are controlled by the service, not this plugin. Returned prices are cached in memory for up to one hour. Revoking HTTP cancels pending lookups and disables cached GE readings. There are no developer-operated collection endpoints.
+Privacy notice: https://github.com/daanpaalvastjunkmail-png/afk-alerts/blob/main/PRIVACY.md
+Data questions: daan9_9@hotmail.com
