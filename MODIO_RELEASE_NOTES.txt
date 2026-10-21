@@ -1,0 +1,11 @@
+Version: 0.7.0
+
+Public testing release.
+
+Settings now has General, Audio, Sounds and Developer tabs. Connection status, API snapshots, resource diagnostics and opt-in effect recording/export live under Developer. Everyday audio and permission controls remain easy to find.
+
+MIT-licensed source release with build tools, tests and contribution instructions. Public downloads exclude personal sounds, converter binaries and recordings.
+
+Includes configurable resource/effect/chat/inventory/skilling/drop alerts, personal presets, four Gregorovic variants and ten built-in sounds. Bars stay red while an alert condition is active. Chat/HTTP permissions are optional and verified independently.
+
+No settings reset or preset migration. Expanded timer bindings, native permission flow and wider platform compatibility still need feedback. This is 0.7.0 for public testing, not a claim of 1.0 completeness.

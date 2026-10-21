@@ -1,0 +1,19 @@
+{
+  "name": "AFK ALERTS",
+  "version": "0.7.0",
+  "description": "Configurable audio and visual reminders for resources, effects, inventory, skilling, chat and owned drops.",
+  "hasSettingsIcon": true,
+  "requiredDependencies": {
+    "prettyui": 6398181
+  },
+  "optionalDependencies": {},
+  "optionalPermissions": [
+    "httpAccess",
+    "chatAccess"
+  ],
+  "urls": {
+    "ge": "https://secure.runescape.com"
+  },
+  "hasRibbonIcon": true,
+  "contactEmailAddress": "daan9_9@hotmail.com"
+}
